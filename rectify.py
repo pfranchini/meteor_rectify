@@ -118,7 +118,7 @@ if __name__ == "__main__":
     rectified_width = ceil(sum(corr))
     
     # Make new image
-    rectified_img = Image.new(img.mode, (rectified_width, img.size[1]))
+    rectified_img = Image.new(img.mode, (int(rectified_width), img.size[1]))
 
     # Get the pixel 2d arrays from the source image
     orig_pixels = img.load()
